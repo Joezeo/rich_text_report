@@ -45,6 +45,7 @@ public class BugDemo extends Application {
         area.textProperty().addListener((ob, ov, nv) -> {
             int par9Line = area.getParagraphLinesCount(9);
             int par18Line = area.getParagraphLinesCount(18);
+            // paragraphs[9] and paragraphs[18]'s line count should all be 2, but getting 2 and 3 there
             System.out.println("par9 = " + par9Line);
             System.out.println("par18 = " + par18Line);
         });
