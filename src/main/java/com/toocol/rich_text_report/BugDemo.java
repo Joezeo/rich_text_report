@@ -46,8 +46,8 @@ public class BugDemo extends Application {
             int par9Line = area.getParagraphLinesCount(9);
             int par18Line = area.getParagraphLinesCount(18);
             // paragraphs[9] and paragraphs[18]'s line count should all be 2, but getting 2 and 3 there
-            // 9: lrwxrwxrwx.  1 root root     9 Sep 14  2020 $lib64$ -> usr/lib64
-            //18: lrwxrwxrwx.  1 root root     8 Sep 14  2020 $sbin$ -> usr/sbin
+            // 9: lrwxrwxrwx.  1 root root     9 Sep 14  2020 lib64 -> usr/lib64
+            //18: lrwxrwxrwx.  1 root root     8 Sep 14  2020 sbin -> usr/sbin
             System.out.println("par9 = " + par9Line);
             System.out.println("par18 = " + par18Line);
         });
