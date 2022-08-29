@@ -39,7 +39,7 @@ public class BugDemo extends Application {
 
         BugTextArea area = new BugTextArea();
         area.setWrapText(true);
-        area.setStyle("-fx-font-family: \"Consolas\";-fx-font-size: 10pt;-fx-padding: 15 15 5 15;");
+        area.setStyle("-fx-padding: 15 15 5 15;");
         area.prefHeightProperty().bind(pane.heightProperty());
         area.prefWidthProperty().bind(pane.widthProperty());
         area.textProperty().addListener((ob, ov, nv) -> {
